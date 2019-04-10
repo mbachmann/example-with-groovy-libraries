@@ -1,0 +1,1 @@
+Configures necessary Git information and performs a Maven release.
