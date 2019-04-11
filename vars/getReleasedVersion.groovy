@@ -1,3 +1,6 @@
 def call() {
-    (readFile('build.gradle') =~ '<version>(.+)-SNAPSHOT</version>')[1][1]
+
+    println "Hallo das script chani lässe"
+    readFile 'build.gradle'
+    //(readFile('build.gradle') =~ '<version>(.+)-SNAPSHOT</version>')[0][1]
 }
