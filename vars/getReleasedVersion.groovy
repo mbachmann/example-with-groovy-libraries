@@ -1,3 +1,3 @@
 def call() {
-    (readFile('pom.xml') =~ '<version>(.+)-SNAPSHOT</version>')[0][1]
+    (readFile('build.gradle') =~ '<version>(.+)-SNAPSHOT</version>')[0][1]
 }
