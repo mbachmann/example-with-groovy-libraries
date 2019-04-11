@@ -14,10 +14,7 @@ def call() {
         //println "Step Read POM"
         return POM;
 
-    return this
-
-
-
-
     //(readFile('build.gradle') =~ '<version>(.+)-SNAPSHOT</version>')[0][1]
 }
+
+return this

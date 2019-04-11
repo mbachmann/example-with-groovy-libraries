@@ -9,7 +9,5 @@ def readPOM() {
     //println "Step Read POM"
     return POM;
 
-
-
 }
 return this

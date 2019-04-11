@@ -4,11 +4,8 @@ This repository contains an example Shared Library with couple scripts that can 
 
 Following steps are available:
 
-* `getReleasedVersion`
-* `withDocker`
-* `dockerCmd`
-* `release`
-* `restAssured`
-* `bobcat`
+* `getGradleReleasedVersion`
+* `gradleRestAssured`
+* `mvnBobcat`
 
 For more info, please refer to docs of each step in the `vars` folder.
