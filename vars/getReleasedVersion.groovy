@@ -1,3 +1,3 @@
 def call() {
-    (readFile('build.gradle') =~ '<version>(.+)-SNAPSHOT</version>')[0][1]
+    (readFile('build.gradle') =~ '<version>(.+)-SNAPSHOT</version>')[1][1]
 }
