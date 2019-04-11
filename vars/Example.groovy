@@ -5,7 +5,8 @@ def readPOM() {
     assert list instanceof groovy.util.Node
     assert list.technology.name.text() == 'Groovy'
 
-    println "Step Read POM"
+    echo " Halloi ha hallo"
+    //println "Step Read POM"
     return POM;
 
 
