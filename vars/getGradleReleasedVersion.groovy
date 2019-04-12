@@ -4,17 +4,15 @@ def call() {
     //readFile 'build.gradle'
 
 
-        POM = sh ( script: 'cat build.gradle', returnStdout: true)
-        def list = readGradleBuild file: 'build.gradle'
+    def pom = sh ( script: 'cat build.gradle', returnStdout: true)
+    def list = readGradleBuild file: 'build.gradle'
 
-        assert list instanceof groovy.util.Node
-        assert list.technology.name.text() == 'Groovy'
+    assert list instanceof groovy.util.Node
+    assert list.technology.name.text() == 'Groovy'
 
-        echo " Halloi ha hallo"
-        //println "Step Read POM"
-        return POM;
+    echo " Halloi ha hallo"
+    //println "Step Read POM"
+    return pom;
 
     //(readFile('build.gradle') =~ '<version>(.+)-SNAPSHOT</version>')[0][1]
 }
-
-return this

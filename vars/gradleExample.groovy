@@ -1,5 +1,5 @@
-def readPOM() {
-    POM = sh ( script: 'cat build.gradle', returnStdout: true)
+def call() {
+    def pom = sh ( script: 'cat build.gradle', returnStdout: true)
     def list = readGradleBuild file: 'build.gradle'
 
     assert list instanceof groovy.util.Node
@@ -7,7 +7,6 @@ def readPOM() {
 
     echo " Halloi ha hallo"
     //println "Step Read POM"
-    return POM;
+    return pom;
 
 }
-return this
